@@ -16,7 +16,7 @@ const About = () => {
           {/* Main About Text */}
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-8 hover:border-green-500/50 transition-all duration-300 mb-8">
             <p className="text-lg leading-relaxed text-gray-700">
-            Software Engineering student in my fourth year at Jeddah University, with a strong interest in delivering production-ready solutions and contributing to impactful, real-world work. I have participated in a wide range of projects across different domains. My experience includes JavaScript/TypeScript, React, Next.js, Node.js/Express, REST APIs, MySQL, MongoDB, Git and Docker.   </p>
+            Software Engineering student in my final semester at Jeddah University, with a strong interest in delivering production-ready solutions and contributing to impactful, real-world work. I have participated in a wide range of projects across different domains. My experience includes JavaScript/TypeScript, React, Next.js, Node.js/Express, REST APIs, MySQL, MongoDB, Git and Docker.   </p>
           </div>
 
 

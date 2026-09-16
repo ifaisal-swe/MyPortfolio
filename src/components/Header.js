@@ -133,7 +133,7 @@ const Header = () => {
             Full-Stack Developer
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Software Engineering Student (4/5) at Jeddah University
+            Software Engineering Student (Final Semester) at Jeddah University
           </p>
 
           {/* Contact Info */}
