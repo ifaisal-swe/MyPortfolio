@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Calendar, Tag, ArrowLeft, BookOpen } from 'lucide-react';
@@ -7,7 +7,6 @@ import { getBlogPostBySlug } from '../utils/blogLoader';
 
 const BlogPost = () => {
   const { slug } = useParams();
-  const navigate = useNavigate();
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -130,17 +129,17 @@ const BlogPost = () => {
             remarkPlugins={[remarkGfm]}
             components={{
               // Style headings
-              h1: ({node, ...props}) => <h1 className={`text-4xl font-bold text-gray-800 mt-8 mb-4 ${isRTL ? 'text-right' : 'text-left'}`} {...props} />,
-              h2: ({node, ...props}) => <h2 className={`text-3xl font-bold text-gray-800 mt-8 mb-4 ${isRTL ? 'text-right' : 'text-left'}`} {...props} />,
-              h3: ({node, ...props}) => <h3 className={`text-2xl font-bold text-gray-800 mt-6 mb-3 ${isRTL ? 'text-right' : 'text-left'}`} {...props} />,
-              h4: ({node, ...props}) => <h4 className={`text-xl font-bold text-gray-800 mt-4 mb-2 ${isRTL ? 'text-right' : 'text-left'}`} {...props} />,
+              h1: ({node, children, ...props}) => <h1 className={`text-4xl font-bold text-gray-800 mt-8 mb-4 ${isRTL ? 'text-right' : 'text-left'}`} {...props}>{children}</h1>,
+              h2: ({node, children, ...props}) => <h2 className={`text-3xl font-bold text-gray-800 mt-8 mb-4 ${isRTL ? 'text-right' : 'text-left'}`} {...props}>{children}</h2>,
+              h3: ({node, children, ...props}) => <h3 className={`text-2xl font-bold text-gray-800 mt-6 mb-3 ${isRTL ? 'text-right' : 'text-left'}`} {...props}>{children}</h3>,
+              h4: ({node, children, ...props}) => <h4 className={`text-xl font-bold text-gray-800 mt-4 mb-2 ${isRTL ? 'text-right' : 'text-left'}`} {...props}>{children}</h4>,
               
               // Style paragraphs
               p: ({node, ...props}) => <p className={`text-gray-700 leading-relaxed mb-4 ${isRTL ? 'text-right' : 'text-left'}`} {...props} />,
               
               // Style links
-              a: ({node, ...props}) => (
-                <a className="text-green-600 hover:text-green-700 underline" target="_blank" rel="noopener noreferrer" {...props} />
+              a: ({node, children, ...props}) => (
+                <a className="text-green-600 hover:text-green-700 underline" target="_blank" rel="noopener noreferrer" {...props}>{children}</a>
               ),
               
               // Style lists
@@ -174,8 +173,8 @@ const BlogPost = () => {
               hr: ({node, ...props}) => <hr className="my-8 border-gray-300" {...props} />,
               
               // Style images
-              img: ({node, ...props}) => (
-                <img className="rounded-lg my-4 max-w-full h-auto" {...props} />
+              img: ({node, alt, ...props}) => (
+                <img className="rounded-lg my-4 max-w-full h-auto" alt={alt || ''} {...props} />
               ),
               
               // Style tables

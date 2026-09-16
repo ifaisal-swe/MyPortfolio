@@ -226,8 +226,6 @@ export async function getAllBlogPosts() {
       return [];
     }
     
-    const posts = [];
-    
     // Fetch all blog posts in parallel
     const fetchPromises = manifest.map(async (filename) => {
       console.log(`Processing filename: ${filename}`);
