@@ -168,7 +168,7 @@ const Header = () => {
               <span className="text-gray-700 group-hover:text-gray-900 transition-colors">LinkedIn</span>
             </a>
             <a 
-              href="https://github.com/ifaisal1" 
+              href="https://github.com/ifaisal-swe" 
               target="_blank" 
               rel="noopener noreferrer"
               className="group flex items-center gap-2 bg-gray-50 px-6 py-3 rounded-lg border border-gray-200 hover:bg-gray-100 transition-all duration-300 hover:scale-105"

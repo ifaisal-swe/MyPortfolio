@@ -59,7 +59,7 @@ function App() {
                   X 
                 </a>
                 <a 
-                  href="https://github.com/ifaisal1"
+                  href="https://github.com/ifaisal-swe"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-green-600 transition-colors"
