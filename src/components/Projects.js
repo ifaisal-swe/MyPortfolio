@@ -5,8 +5,8 @@ const Projects = () => {
     {
       title: "Suhol",
       subtitle: "AI-Powered Project Management",
-      description: "Working as a Software Engineer on Suhol, an AI-powered project management platform. Building scalable solutions and implementing core features using modern web technologies. The platform is deployed and actively serving 100+ users, helping teams manage projects more efficiently with AI assistance.",
-      technologies: ["Docker", "Nuxt.js", "Vue.js"],
+      description: "Working as a Software and AI Engineer on Suhol, an AI-powered project management platform. Building scalable solutions and implementing core features using modern web technologies, including payment integration with Streampay.sa, LiveKit for Suhol meetings, and Supabase as the development platform with realtime chat features. The platform is deployed and actively serving 600+ users, helping teams manage projects more efficiently with AI assistance.",
+      technologies: ["Docker", "Nuxt.js", "Vue.js", "Supabase", "Livekit", "streampay", "Git", "Mastra"],
       platform: "Web Platform",
       stats: { users: "600+" },
       liveLink: "https://suhol.ai",
@@ -14,7 +14,7 @@ const Projects = () => {
       untilNow: true
     },
     {
-      title: " Gaming Development - CFX.re",
+      title: "Game Development - CFX.re",
       subtitle: "Lead Server Script Developer & Systems Architect",
       description: `Designed, developed, and optimized a custom FiveM (GTA V) server infrastructure to maximize performance, scalability, and security for a large-scale multiplayer community, evolving capacity from 
 400 concurrent players (2024) to 
@@ -25,16 +25,16 @@ const Projects = () => {
       platform: "CFX.re Game server",
       stats: {  users: "250K+" },
       liveLink: "https://servers.fivem.net/servers/detail/dm4rjq",
-      since: "2023",
+      since: "2024",
       untilNow: true
     },
     {
       title: "PlaneBot",
       subtitle: "Discord Server Management Bot",
-      description: "Full Stack Developer on PlaneBot, a Discord management bot serving 500+ servers and 300,000+ members. Architected and deployed a full-stack dashboard using Next.js and a MySQL, utilizing Zod for runtime validation to ensure type safety and prevent injection risks. Optimized system performance by integrating a Redis caching layer and Next.js ISR, reducing database load and achieving sub-second response times for dashboards. Developed a UI with shadcn/ui and Tailwind CSS, featuring real-time server statistics, aggregated analytics, and modular settings panels for seamless server management.",
+      description: "Full Stack Developer on PlaneBot, a Discord management bot serving 1200+ servers and 300,000+ members. Architected and deployed a full-stack dashboard using Next.js and a MySQL, utilizing Zod for runtime validation to ensure type safety and prevent injection risks. Optimized system performance by integrating a Redis caching layer and Next.js ISR, reducing database load and achieving sub-second response times for dashboards. Developed a UI with shadcn/ui and Tailwind CSS, featuring real-time server statistics, aggregated analytics, and modular settings panels for seamless server management.",
       technologies: ["Next.js", "Node.js", "MySQL", "Redis", "Zod"],
       platform: "Web dashboard",
-      stats: { servers: "1200+", users: "150k+" },
+      stats: { servers: "1200+", users: "300K+" },
       liveLink: "https://planebot.xyz",
       since: "2025",
       untilNow: true
@@ -44,7 +44,7 @@ const Projects = () => {
       description: "Developed an automated social media bot that provides daily visual progress tracking for academic semester completion. The bot posts daily updates featuring progress bar visualization showing semester completion percentage, remaining days countdown with precise calculations, weekly progress indicators and milestone tracking, and clean, minimalist design for easy readability.",
       technologies: ["Node.js", "X API", "Automation"],
       platform: "X (Twitter)",
-      stats: { users: "2.3k+" },
+      stats: { users: "2.1k+" },
       liveLink: "https://x.com/timer_uj",
       since: "2023",
       untilNow: true
